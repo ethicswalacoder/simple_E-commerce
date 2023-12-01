@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroImg from "../../assets/hero.jpg";
-import HeroImg1 from "../../assets/hero1.jpeg";
+import HeroImg1 from "../../assets/hero1.jpg";
 import HeroImg2 from "../../assets/hero2.jpg";
 import {BsArrowRight} from "react-icons/bs";
 

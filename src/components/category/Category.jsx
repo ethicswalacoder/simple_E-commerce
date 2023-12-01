@@ -1,58 +1,67 @@
 import React from 'react';
-// import Brick from "../../assets/brick.jpg";
-import Brick from "../../assets/brick.jpg"
+
+import Fruits from "../../assets/fruits.png"
+import Veg from "../../assets/veg.jpg"
+import Goods from "../../assets/goods.jpg"
+import Brades from "../../assets/brades.png"
+import Fish from "../../assets/fish.png"
+import Eggs from "../../assets/eggs.jpeg"
+import Drinks from "../../assets/drinks.jpg"
+import Chips from "../../assets/chips.png"
 
 import CategoryCard from './CategoryCard';
 
 const data = [
   {
     id:0,
-    name: "Special Brick",
-    img: Brick,
-    price: 9999.00
+    name: "Fresh Fruits",
+    img: Fruits,
+   count: 10,
   },
   {
     id:1,
-    name: "NO1 Brick",
-    img: Brick,
-    price: 7999.00
+    name: "Fresh Vegs",
+    img: Veg,
+   count: 10,
   },
   {
     id:2,
-    name: "NO2 Brick",
-    img: Brick,
-    price: 6999.00
+    name: "Canned Goods",
+    img: Goods,
+   count: 8,
   },
   {
     id:3,
-    name: "NO3 Brick",
-    img: Brick,
-    price: 5999.00
+    name: "Bread & Bakery",
+    img: Brades,
+   count: 12,
   },
   {
     id:4,
-    name: "NO3 Brick",
-    img: Brick,
-    price: 5999.00
+    name: "Fishes",
+    img: Fish,
+   count: 10,
   },
   {
     id:5,
-    name: "NO3 Brick",
-    img: Brick,
-    price: 5999.00
+    name: "Egg & Dairy",
+    img: Eggs,
+   count: 100,
   },
   {
     id:6,
-    name: "NO3 Brick",
-    img: Brick,
-    price: 5999.00
+    name: "Soft Drinks",
+    img: Drinks,
+   count: 50,
   },
   {
     id:7,
-    name: "NO3 Brick",
-    img: Brick,
-    price: 5999.00
+    name: "Chips",
+    img: Chips,
+   count: 500,
   },
+ 
+  
 ];
 
 const Category = () => {
@@ -64,7 +73,7 @@ const Category = () => {
           key={el.id}
           img={el.img}
           name={el.name}
-          price = {el.price}
+          count = {el.count}
           />
         ))}
       </div>
