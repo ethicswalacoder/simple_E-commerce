@@ -9,4 +9,7 @@
     .icon__wrapper1 {
         @apply border border-gray-600 rounded-full w-[50px] h-[50px] grid place-items-center text-[25px]
     }
+    .feature_btn {
+        @apply bg-accent text-white px-4 py-1 rounded-full
+    }
 }
