@@ -4,7 +4,7 @@ import { FaRegCircleUser } from "react-icons/fa6";
 import { BsCart4 } from "react-icons/bs";
 import CartCoBatz from "../cartcountbatch/CartCoBatz";
 
-const Header = () => {
+const Header = ({setShowCart}) => {
   return (
     <div className="sticky top-0 bg-white  z-10">
       <div className="container  hidden lg:block">
@@ -26,8 +26,8 @@ const Header = () => {
             <div className="icon__wrapper">
               <FaRegCircleUser className="text-gray-600" />
             </div>
-            <div className="icon__wrapper1 relative">
-              <BsCart4 className="text-gray-600"/>
+            <div className="icon__wrapper1 relative cursor-pointer" onClick={()=> setShowCart(true)}>
+              <BsCart4 className="text-gray-600" />
               <CartCoBatz size="w-[25px] h-[25px]"/>
             </div>
           </div>
