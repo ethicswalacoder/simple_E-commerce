@@ -6,18 +6,19 @@ import BlogCart from '../blogcart/BlogCart';
 
 const data = [
     {
+      id: 0,
         img:Blog1,
         title: "Healthy Food Healthy Life",
         date: "Aug 27, 2024",
         comment: 8,
     },
-    {
+    {id:1,
         img:Blog2,
         title: "Healthy Food Healthy Life",
         date: "Aug 27, 2024",
         comment: 8,
     },
-    {
+    {id:2,
         img:Blog3,
         title: "Healthy Food Healthy Life",
         date: "Aug 27, 2024",
@@ -35,7 +36,7 @@ const BlogSection = () => {
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 pt-8">
         {data.map((el)=> (
             <BlogCart
-            key={el.date}
+            key={el.id}
             img={el.img}
             title={el.title}
             date={el.date}
